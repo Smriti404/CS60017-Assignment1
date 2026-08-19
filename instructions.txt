@@ -1,43 +1,24 @@
-========================================================================
-CS60017: Social Computing - Assignment 1 Execution Instructions
-========================================================================
+Name: Smriti
+Roll Number: 23CS30053
+Course: CS60017 - Social Computing
 
-Environment Requirements:
-- Python 3.8+
-- Required Packages: numpy, networkx, matplotlib
+Python Version: Python 3.13 (compatible with Python 3.8+)
+Dependencies: networkx, numpy, matplotlib
 
-Directory Structure:
-CS60017_Assignment1/
-├── make_subgraph.py
-├── gen_structure.py
-├── gen_centrality.py
-├── instructions.txt
-├── cit-HepTh.txt
-├── subgraphs/
-│   └── cite-phy.elist
-├── plots/
-│   ├── deg_dist_cite-phy.elist.png
-│   ├── shortest_path_cite-phy.elist.png
-│   ├── connected_comp_cite-phy.elist.png
-│   └── clustering_coeff_cite-phy.elist.png
-└── centralities/
-    ├── closeness.txt
-    ├── betweenness.txt
-    ├── eigenvector.txt
-    └── pagerank.txt
+How to run the code:
 
-Execution Commands:
-1. Extract and preprocess subgraph:
-   python make_subgraph.py
+1. Preprocessing:
+python3 make_subgraph.py
 
-2. Generate structural metrics (Task 1):
-   python gen_structure.py cite-phy.elist
+2. Task 1 (Graph Structure):
+python3 gen_structure.py cite-phy.elist
 
-3. Generate centrality metrics (Task 2):
-   python gen_centrality.py cite-phy.elist
+3. Task 2 (Centrality Metrics):
+python3 gen_centrality.py cite-phy.elist
 
 Runtime Information:
 - make_subgraph.py: ~2 seconds
 - gen_structure.py: ~10 seconds
-- gen_centrality.py: ~3-5 minutes
-========================================================================
+- gen_centrality.py: ~3 to 4 minutes
+
+All scripts run sequentially on a standard 4GB RAM machine and complete well under the 10-minute limit.
